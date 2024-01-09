@@ -24,7 +24,7 @@ import com.example.rickandmorty.domain.model.Character
 import com.example.rickandmorty.ui.detail.components.CharacterImage
 import com.example.rickandmorty.ui.detail.components.DetailProperty
 import com.example.rickandmorty.ui.detail.components.mirroringBackIcon
-
+//Menu de detalles de Personaje
 @Composable
 fun DetailScreen(
     viewModel: DetailViewModel = hiltViewModel(),
@@ -38,6 +38,7 @@ fun DetailScreen(
 }
 
 @Composable
+//Detalles de Personaje
 private fun DetailContent(
     modifier: Modifier = Modifier,
     character: Character?,
@@ -58,6 +59,7 @@ private fun DetailContent(
 }
 
 @Composable
+//Cabecera, con imagen y nombre.
 private fun Header(
     modifier: Modifier = Modifier,
     character: Character?
@@ -78,6 +80,7 @@ private fun Header(
 }
 
 @Composable
+//Detalles especificos del personaje.
 private fun Body(character: Character?) {
     Column(
         modifier = Modifier
@@ -93,6 +96,7 @@ private fun Body(character: Character?) {
 }
 
 @Composable
+//Boton para volver a menu principal
 private fun Up(upPress: () -> Unit) {
     IconButton(
         onClick = upPress,

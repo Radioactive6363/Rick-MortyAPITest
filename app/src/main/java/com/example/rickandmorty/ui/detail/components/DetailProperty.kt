@@ -15,6 +15,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
 @Composable
+//Propiedades de Detalles (Tamanio de texto, color, etc.)
 fun DetailProperty(
     modifier: Modifier = Modifier,
     label: String,

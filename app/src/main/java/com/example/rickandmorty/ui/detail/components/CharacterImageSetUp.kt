@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import coil.size.Size
-
+//Imagen de personaje
 @Composable
 fun CharacterImage(image: String?) {
     ImageContainer(modifier = Modifier.size(128.dp)) {
@@ -35,8 +35,7 @@ fun CharacterImage(image: String?) {
         }
     }
 }
-
-// This function may be private
+//Contenedor de imagen de personaje
 @Composable
 private fun ImageContainer(
     modifier: Modifier = Modifier,
