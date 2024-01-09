@@ -17,7 +17,7 @@ import com.example.rickandmorty.R
 import com.example.rickandmorty.domain.model.Characters
 import com.example.rickandmorty.ui.home.components.CharacterItem
 import kotlinx.coroutines.flow.collectLatest
-
+//Menu Principal
 @Composable
 fun HomeScreen(
     onItemClicked: (Int) -> Unit,
@@ -62,7 +62,7 @@ fun HomeScreen(
         )
     }
 }
-
+//Barra Superior ("Characters")
 @Composable
 private fun HomeTopBar(
     modifier: Modifier = Modifier
@@ -80,7 +80,7 @@ private fun HomeTopBar(
         backgroundColor = MaterialTheme.colors.surface
     )
 }
-
+//Lista de Personajes
 @Composable
 private fun HomeContent(
     modifier: Modifier = Modifier,
@@ -111,7 +111,7 @@ private fun HomeContent(
         if (isLoading) FullScreenLoading()
     }
 }
-
+//Barra Inferior ("Previous"/"Next")
 @Composable
 private fun HomeBottomBar(
     showPrevious: Boolean,
